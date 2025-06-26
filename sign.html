@@ -12,16 +12,58 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
 </head>
 <body class="bg-dark text-light">
-
-  
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 py-3">
-    <a class="navbar-brand" href="#">Tech-Shop</a>
-    <div class="ms-auto">
-      <i class="fas fa-search text-white me-3"></i>
-      <i class="fas fa-shopping-cart text-white me-3"></i>
-      <i class="fas fa-user text-white"></i>
+ <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white ms-5" href="#">Tech-Shop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="d-flex ms-auto">
+          <div class="nav-item position-relative me-5">
+            <a href="#" class="nav-link text-white">
+              <i class="fas fa-search" aria-hidden="true"></i>
+              <span class="visually-hidden">Search</span>
+            </a>
+            <div class="search position-absolute bg-dark" style="top: 100%; right: 0; display: none;">
+              <div class="card p-2 bg-dark">
+                <p class="mb-0 text-white">Search</p>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item position-relative me-5">
+            <a href="#" class="nav-link text-white">
+              <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+              <sup class="bg-danger badge rounded-circle">4</sup>
+              <span class="visually-hidden">Cart</span>
+            </a>
+            <div class="shopping position-absolute bg-dark" style="top: 100%; right: 0; display: none;">
+              <div class="card p-2 bg-dark">
+                <p class="mb-0 text-white">Cart</p>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item position-relative me-5">
+            <a href="#" class="nav-link text-white">
+              <i class="fas fa-user" aria-hidden="true"></i>
+              <span class="visually-hidden">User Profile</span>
+            </a>
+            <form class="user-form position-absolute border border-secondary-subtle rounded-end bg-opacity-75 bg-dark text-white p-4">
+              <div class="mb-3">
+                <p class="mb-0 opacity-50">Hello!</p>
+                <p class="opacity-50">Access account and manage orders</p>
+                <button type="button" class="btn border-secondary-subtle rounded-end bg-opacity-75 text-white opacity-50" onclick="toggleSignupForm()">Login/Signup</button>
+                <hr>
+                <p class="opacity-50">Please Login</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   </nav>
+  
+  
   <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
 <div class="carousel-item active">
