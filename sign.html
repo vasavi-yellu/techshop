@@ -62,7 +62,47 @@
       </div>
     </div>
   </nav>
- 
+  <div class="signup-form container w-25 ">
+    <div class="card shadow bg-dark border-secondary-subtle text-white position-relative">
+      <button type="button" class="close-btn btn btn-link text-white" onclick="toggleSignupForm()">✕</button>
+      <h4 class="mt-2">Sign Up</h4>
+      <div class="d-flex">
+      <p class="opacity-50">Already have an account?</p>
+      <span class="text-white">Login</span>
+      </div> 
+      <div class="card-body">
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control bg-dark border-secondary-subtle text-white" id="username" placeholder="Username" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control bg-dark border-secondary-subtle text-white" id="email" placeholder="Email" required>
+          </div>
+          <div class="mb-3">
+           
+            <input type="password" class="form-control bg-dark border-secondary-subtle text-white" id="password" placeholder="Password" required>
+          </div>
+          <div class="mb-3">
+           
+            <input type="password" class="form-control bg-dark border-secondary-subtle text-white" id="confirmPassword" placeholder="Confirm Password" required>
+          </div>
+          <div class="d-grid">
+            <button type="submit" class="btn btn-danger">Sign Up</button>
+          </div>
+          <div class="slash mt-3 text-center opacity-50">
+            -------Or Login With---------
+          </div>
+          <div class="buttons mt-3 d-flex justify-content-center gap-2">
+            <button type="button" class="btn bg-primary text-white">Facebook</button>
+            <button type="button" class="btn bg-danger text-white">Google</button>
+            <button type="button" class="btn bg-info text-white">Twitter</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  
   <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
 <div class="carousel-item active">
