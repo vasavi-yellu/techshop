@@ -130,3 +130,7 @@
 .card-wrapper {
     display: flex;
 }
+footer{
+    margin-left: -7%;
+    width:1470px;
+}
